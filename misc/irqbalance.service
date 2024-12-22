@@ -7,8 +7,8 @@ ConditionCPUs=>1
 
 [Service]
 EnvironmentFile=-/usr/lib/irqbalance/defaults.env
-EnvironmentFile=-/path/to/irqbalance.env
-ExecStart=/usr/sbin/irqbalance $IRQBALANCE_ARGS
+EnvironmentFile=-/etc/irqbalance.env
+ExecStart=/usr/bin/irqbalance $IRQBALANCE_ARGS
 CapabilityBoundingSet=CAP_SETPCAP
 NoNewPrivileges=yes
 ProtectSystem=strict
